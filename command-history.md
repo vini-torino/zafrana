@@ -1,100 +1,100 @@
-## Become root
-sudo su
+### Become root
+ sudo su
 
 
-## Make sure that selinux is disabled
-setenforce 0 
+### Make sure that selinux is disabled
+ setenforce 0 
 
 
-## Update all your packages
-dnf check-update
-dnf update
+### Update all your packages
+ dnf check-update
+ dnf update
 
 
-## Reboot to make sure that any kernel fix or update will be used
-reboot
+### Reboot to make sure that any kernel fix or update will be used
+ reboot
 
 
-## Now add zabbix LTS repository
-rpm -Uvh https://repo.zabbix.com/zabbix/4.0/rhel/8/x86_64/zabbix-release-4.0-2.el8.noarch.rpm
-dnf clean all
+### Now add zabbix LTS repository
+ rpm -Uvh https://repo.zabbix.com/zabbix/4.0/rhel/8/x86_64/zabbix-release-4.0-2.el8.noarch.rpm
+ dnf clean all
 
 
-## Install all packages that will be necessary 
-yum install zabbix-server-mysql zabbix-web-mysql zabbix-agent mariadb-server zabbix-get
+### Install all packages that will be necessary 
+ yum install zabbix-server-mysql zabbix-web-mysql zabbix-agent mariadb-server zabbix-get
 
 
-## Start mariadb service
-systemctl start mariadb
+### Start mariadb service
+ systemctl start mariadb
 
 
-## Open mysql shell
-mysql
+### Open mysql shell
+ mysql
 
 
-# Create zabbix database and user
-create database zabbix character set utf8 collate utf8_bin;
-grant all privileges on zabbix.* to zabbix@localhost identified by 'password';
-quit; 
+### Create zabbix database and user
+  mysql > create database zabbix character set utf8 collate utf8_bin;
+  mysql > grant all privileges on zabbix.* to zabbix@localhost identified by 'password';
+  myql > quit; 
 
 
-## Now open the fallowing file
-vi /etc/my.cnf.d/mariadb-server.cnf 
+### Now open the fallowing file
+ vi /etc/my.cnf.d/mariadb-server.cnf 
 
 
-# Under [mysqld] add the 2 lines
-default_storage_engine=My_ISAM
-innodb_strict_mode=0
+### Under [mysqld] add the 2 lines
+ default_storage_engine=My_ISAM
+ innodb_strict_mode=0
 
 
-## Now import zabbix schemma
-zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql  zabbix 
-systemctl restart mariadb
+### Now import zabbix schemma
+ zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql  zabbix 
+ systemctl restart mariadb
 
 
-## echo your database password zabbix_sever.conf 
+### echo your database password zabbix_sever.conf 
  echo 'DBPassword=password' >> /etc/zabbix/zabbix_server.conf
 
 
-## Start zabbix-server 
+### Start zabbix-server 
 systemctl start zabbix-server
 
 
-## Echo your timezone to  the front-end config file
-echo 'php_value[date.timezone] = America/Sao_Paulo' >>  /etc/php-fpm.d/zabbix.conf
+### Echo your timezone to  the front-end config file
+ echo 'php_value[date.timezone] = America/Sao_Paulo' >>  /etc/php-fpm.d/zabbix.conf
 
 
-## Start the httpd server 
-systemctl start httpd 
+### Start the httpd server 
+ systemctl start httpd 
 
 
-## Also start our local zabbix-agent 
-systemctl start zabbbix-agent
+### Also start our local zabbix-agent 
+ systemctl start zabbbix-agent
 
 
-## Enable our 4 main services during boot time
-systemctl enable httpd zabbix-server zabbix-agent mariadb
+### Enable our 4 main services during boot time
+ systemctl enable httpd zabbix-server zabbix-agent mariadb
 
 
-## Go to the web interface 
-firefox http://your_zabbix_server_ip/zabbix
+### Go to the web interface 
+ firefox http://your_zabbix_server_ip/zabbix
 
 
-## Fallow this guide when setting everything up
-https://www.zabbix.com/documentation/4.0/manual/installation/install#installing_frontend
+### Fallow this guide when setting everything up
+ https://www.zabbix.com/documentation/4.0/manual/installation/install#installing_frontend
 
 
-## First login
+### First login
 Zabbix default user and password
 - Admin
 - zabbix
 
-- After first login 
-  Go to Administration
-  Then click on Users
-  Click on the Admin user
-  Go on Passoword and click - Change Password
-  Write your new password down, for future use
+### After first login 
+ - Go to Administration
+ - Then click on Users
+ - Click on the Admin user
+ - Go on Passoword and click - Change Password
+ - Write your new password down, for future use
 
 
 ## Important !!
