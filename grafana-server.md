@@ -8,6 +8,7 @@ Go to:
  copy the fallowing lines: 
  
  ''' 
+
 [grafana]
 name=grafana
 baseurl=https://packages.grafana.com/oss/rpm  
