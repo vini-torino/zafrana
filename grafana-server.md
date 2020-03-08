@@ -5,7 +5,8 @@ Go to:
  - https://grafana.com/docs/grafana/latest/installation/rpm/
  
  
- copy the fallowing lines:
+ copy the fallowing lines: 
+ 
  ''' 
 [grafana]
 name=grafana
