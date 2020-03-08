@@ -9,8 +9,8 @@ Go to:
  
  ---
  
-[grafana] 
-name=grafana 
+[grafana]  
+name=grafana  
 baseurl=https://packages.grafana.com/oss/rpm  
 repo_gpgcheck=1  
 enabled=1  
