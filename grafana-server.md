@@ -4,6 +4,7 @@
 #### Go to: 
  -  https://grafana.com/docs/grafana/latest/installation/rpm/
  
+ ---
  
  -  Copy the fallowing lines: 
  
@@ -23,4 +24,6 @@
 
 - Paste on:
 
-       /etc/yum.repos.d/grafana.repo
+      /etc/yum.repos.d/grafana.repo
+
+---
