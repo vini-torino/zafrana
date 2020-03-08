@@ -39,7 +39,9 @@
 
 ### Create zabbix database and user
   mysql > create database zabbix character set utf8 collate utf8_bin;
+  
   mysql > grant all privileges on zabbix.* to zabbix@localhost identified by 'password';
+  
   myql > quit; 
 
 
@@ -49,6 +51,7 @@
 
 ### Under [mysqld] add the 2 lines
  default_storage_engine=My_ISAM
+ 
  innodb_strict_mode=0
 
 
