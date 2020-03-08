@@ -39,3 +39,23 @@
  -  Start grafana-server: 
  
         sudo systemctl start grafana-server
+        
+
+--- 
+
+ -  Log into the web console:
+    
+        http://your-server-ip:3000
+        
+        -   User: admin
+        -   Password : admin
+        
+ -  Change your password. 
+ 
+ 
+ ---
+ 
+ 
+ 
+
+    
