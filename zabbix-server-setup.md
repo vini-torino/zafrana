@@ -97,7 +97,7 @@
 
 
 
-### Enable our 4 main services during boot time
+### Enable services during boot time
  systemctl enable httpd zabbix-server zabbix-agent mariadb
 
 
