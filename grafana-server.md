@@ -1,8 +1,12 @@
 ## Grafana Install 
 
 
+
+
  -  Go to:
-    https://grafana.com/docs/grafana/latest/installation/rpm/
+ 
+        https://grafana.com/docs/grafana/latest/installation/rpm/
+ 
  
  ---
  
