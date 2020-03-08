@@ -8,7 +8,7 @@
  
  -  Copy the fallowing lines: 
  
- ---
+
  
     [grafana]  
     name=grafana  
