@@ -107,7 +107,7 @@
 
 
 
-### Fallow this guide when setting everything up
+### Fallow this guide
  https://www.zabbix.com/documentation/4.0/manual/installation/install#installing_frontend
 
 
