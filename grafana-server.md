@@ -20,3 +20,7 @@ sslverify=1
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt  
 
 ---
+
+- Paste on:
+
+       /etc/yum.repos.d/grafana.repo
