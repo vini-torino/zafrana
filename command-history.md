@@ -1,4 +1,4 @@
-# Setting up zabbix-server and local database
+## Setting up zabbix-server
 
 
 ### Become root
