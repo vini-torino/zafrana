@@ -99,6 +99,7 @@ Zabbix default user and password
 
 ## Important !!
 - We must make sure that selinux is disable on boot time
+
   sed -i 's,SELINUX=enforcing,SELINUX=permissive,' /etc/selinux/config
 
 Now reboot the machine and make sure that everything is running before we start setting up grafana 
