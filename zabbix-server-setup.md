@@ -1,12 +1,15 @@
 ## Setting up zabbix-server
 
 
+
 ### Become root
  sudo su
 
 
+
 ### Make sure that selinux is disabled
  setenforce 0 
+
 
 
 ### Update all your packages
@@ -15,8 +18,10 @@
  dnf update
 
 
+
 ### Reboot to make sure that any kernel fix or update will be used
  reboot
+
 
 
 ### Now add zabbix LTS repository
@@ -25,16 +30,20 @@
  dnf clean all
 
 
+
 ### Install all packages that will be necessary 
  yum install zabbix-server-mysql zabbix-web-mysql zabbix-agent mariadb-server zabbix-get
+
 
 
 ### Start mariadb service
  systemctl start mariadb
 
 
+
 ### Open mysql shell
  mysql
+
 
 
 ### Create zabbix database and user
@@ -45,8 +54,10 @@
   myql > quit; 
 
 
+
 ### Now open the fallowing file
  vi /etc/my.cnf.d/mariadb-server.cnf 
+
 
 
 ### Under [mysqld] add the 2 lines
@@ -55,41 +66,50 @@
  innodb_strict_mode=0
 
 
+
 ### Now import zabbix schemma
  zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql  zabbix 
  systemctl restart mariadb
 
 
-### echo your database password zabbix_sever.conf 
+
+### Echo your database password  to zabbix_sever.conf 
  echo 'DBPassword=password' >> /etc/zabbix/zabbix_server.conf
 
 
 ### Start zabbix-server 
-systemctl start zabbix-server
+ systemctl start zabbix-server
+
 
 
 ### Echo your timezone to  the front-end config file
  echo 'php_value[date.timezone] = America/Sao_Paulo' >>  /etc/php-fpm.d/zabbix.conf
 
 
+
 ### Start the httpd server 
  systemctl start httpd 
+
 
 
 ### Also start our local zabbix-agent 
  systemctl start zabbbix-agent
 
 
+
 ### Enable our 4 main services during boot time
  systemctl enable httpd zabbix-server zabbix-agent mariadb
+
 
 
 ### Go to the web interface 
  firefox http://your_zabbix_server_ip/zabbix
 
 
+
 ### Fallow this guide when setting everything up
  https://www.zabbix.com/documentation/4.0/manual/installation/install#installing_frontend
+
 
 
 ### First login
@@ -103,6 +123,7 @@ Zabbix default user and password
  - Click on the Admin user
  - Go on Passoword and click - Change Password
  - Write your new password down, for future use
+
 
 
 ## Important !!
