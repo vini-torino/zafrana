@@ -1,8 +1,8 @@
 ## Grafana Install 
 
 
-#### Go to: 
- -  https://grafana.com/docs/grafana/latest/installation/rpm/
+ -  Go to:
+    https://grafana.com/docs/grafana/latest/installation/rpm/
  
  ---
  
@@ -25,3 +25,13 @@
         /etc/yum.repos.d/grafana.repo
 
 ---
+ 
+ -  Install grafana:
+    
+        sudo yum install grafana
+
+---
+  
+ -  Start grafana-server: 
+ 
+        sudo systemctl start grafana-server
