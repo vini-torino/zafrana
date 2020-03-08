@@ -1,11 +1,11 @@
 Grafana Install 
 
 
-Go to: 
- - https://grafana.com/docs/grafana/latest/installation/rpm/
+### Go to: 
+ -  https://grafana.com/docs/grafana/latest/installation/rpm/
  
  
- copy the fallowing lines: 
+ -  Copy the fallowing lines: 
  
  ---
  
