@@ -11,6 +11,7 @@
 
 ### Update all your packages
  dnf check-update
+ 
  dnf update
 
 
@@ -20,6 +21,7 @@
 
 ### Now add zabbix LTS repository
  rpm -Uvh https://repo.zabbix.com/zabbix/4.0/rhel/8/x86_64/zabbix-release-4.0-2.el8.noarch.rpm
+ 
  dnf clean all
 
 
