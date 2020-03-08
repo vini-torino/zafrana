@@ -1,3 +1,6 @@
+# Setting up zabbix-server and local database
+
+
 ### Become root
  sudo su
 
