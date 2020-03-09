@@ -96,3 +96,9 @@
         
                 zafrana/basic-linux-monitor.json
 
+--- 
+
+- Now you should be able to see data of your own server, provides you have zabbix-agent running.
+
+
+
