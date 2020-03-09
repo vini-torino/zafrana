@@ -93,5 +93,6 @@
         - Click on the  [ Upload .json file ] button. 
         
         - select:
+        
                 zafrana/basic-linux-monitor.json
 
