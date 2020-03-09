@@ -53,9 +53,23 @@
  -  Change your password. 
  
  
- ---
- 
- 
- 
+---
 
+ -  Install all essential plugings by typing this on the terminal 
+    
+        sudo grafana-cli plugins install alexanderzobnin-zabbix-app
+
+        sudo grafana-cli plugins install grafana-clock-panel
+    
+        sudo grafana-cli plugins install grafana-piechart-panel
+
+
+---
+ 
+ 
+ - Restart grafana-server
+  
+       sudo systemctl restart grafana-server 
+ 
+---
     
