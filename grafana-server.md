@@ -50,12 +50,12 @@
         -   User: admin
         -   Password : admin
         
- -  Change your password. 
+        -  Change your password. 
  
  
 ---
 
- -  Install all essential plugings by typing this on the terminal 
+ -  Install all essential plugings by typing this on the terminal: 
     
         sudo grafana-cli plugins install alexanderzobnin-zabbix-app
 
@@ -67,9 +67,21 @@
 ---
  
  
- - Restart grafana-server
+ -  Restart grafana-server:
   
-       sudo systemctl restart grafana-server 
- 
+        sudo systemctl restart grafana-server
+        
 ---
     
+    
+ -  Activate zabbix plugin:
+ 
+        http://your-server-ip:3000/plugins
+
+        - click on the zabbbix plugin.
+        
+        - click on the enable button.
+        
+        
+---
+
