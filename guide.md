@@ -207,7 +207,7 @@ MANUAL CONFIGURATION
  
  -  Install grafana.
     
-        sudo yum install grafana
+        sudo yum install -y grafana
 
 ---
   
