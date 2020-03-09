@@ -136,11 +136,9 @@ MANUAL CONFIGURATION
  
        firefox http://your-zabbix-server-ip/zabbix
 
----
-
- - Fallow this guide.
+     - Fallow this guide.
  
-       https://www.zabbix.com/documentation/4.0/manual/installation/install#installing_frontend
+               https://www.zabbix.com/documentation/4.0/manual/installation/install#installing_frontend
 
 ---
 
