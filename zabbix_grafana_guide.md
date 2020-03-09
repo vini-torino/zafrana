@@ -54,9 +54,13 @@
        
             mysql > create database zabbix character set utf8 collate utf8_bin;
   
-            mysql > grant all privileges on zabbix.* to zabbix@localhost identified by 'password';
+            mysql > grant all privileges on zabbix.* to zabbix@localhost identified by 'zabbix';
   
             myql > quit; 
+            
+     - You should change <'zabbix'> for a much more secure password.
+     
+     - Write down your database password for future use.
 
 ---
 
@@ -64,7 +68,7 @@
 
        sudo vi /etc/my.cnf.d/mariadb-server.cnf 
   
-     - Under [mysqld] paste 2 lines.
+     - Under [mysqld] append this lines.
  
            default_storage_engine=My_ISAM
  
@@ -83,7 +87,9 @@
 
  - Echo your database password  to zabbix_sever.conf.
  
-       sudo echo 'DBPassword=password' | sudo tee -a  /etc/zabbix/zabbix_server.conf
+       sudo echo 'DBPassword=zabbix' | sudo tee -a  /etc/zabbix/zabbix_server.conf
+       
+      - Replace '...=zabbix' and add your database passord.
 
 ---
 
