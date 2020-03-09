@@ -1,3 +1,15 @@
+Recomendations
+      
+    KERNEL: 4.18.0-147.5.1.el8_1.x86_64
+    DISTRO: "Red Hat Enterprise Linux"
+    VERSION: "8.1 (Ootpa)"
+    ZABBIX_VERSION: 4.0.18 # latest LTS realese.
+    DATABASE_VERSION: Ver 15.1 Distrib 10.3.17-MariaDB
+
+
+## Instalation guide
+
+
 ### Zabbix Setup
 
 
