@@ -16,8 +16,6 @@ MANUAL CONFIGURATION
 
 
 
----
-
 - Make sure that selinux is disabled.
           
       sudo setenforce 0 
@@ -181,8 +179,6 @@ MANUAL CONFIGURATION
 ### Grafana Setup
 
 
-
----
 
  -  Go to:
  
