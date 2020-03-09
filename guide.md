@@ -46,7 +46,7 @@ MANUAL CONFIGURATION
 
  - Install all packages that will be necessary.
  
-       sudo yum install zabbix-server-mysql zabbix-web-mysql zabbix-agent mariadb-server zabbix-get
+       sudo yum install -y zabbix-server-mysql zabbix-web-mysql zabbix-agent mariadb-server zabbix-get
 
 ---
 
@@ -80,7 +80,7 @@ MANUAL CONFIGURATION
   
      - Under [mysqld] append this lines.
  
-           default_storage_engine=My_ISAM
+           default_storage_engine=MyISAM
  
            innodb_strict_mode=0
            
@@ -89,9 +89,11 @@ MANUAL CONFIGURATION
 
  - Now import zabbix schemma.
  
+       sudo systemctl restart mariadb
+       
        sudo zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | sudo mysql  zabbix 
        
-       sudo systemctl restart mariadb
+       
 
 ---
 
