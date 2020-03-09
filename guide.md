@@ -125,7 +125,7 @@ MANUAL CONFIGURATION
 
  - Also start our local zabbix-agent. 
  
-       sudo systemctl start zabbbix-agent
+       sudo systemctl start zabbix-agent
 
 ---
 
