@@ -13,11 +13,7 @@ MANUAL CONFIGURATION
 
 ### Zabbix Setup
 
-- Make sure that selinux is disabled.
-          
-      sudo setenforce 0 
 
----
 
 
  - Update all your packages.
@@ -30,6 +26,13 @@ MANUAL CONFIGURATION
  - Reboot to make sure that any kernel fix or update will be used.
   
        sudo reboot
+
+---
+
+
+- Make sure that selinux is disabled.
+          
+      sudo setenforce 0 
 
 ---
 
