@@ -140,11 +140,11 @@
  
  - After first login. 
     
-        - Go to Administration
-        - Then click on Users
-        - Click on the Admin user
-        - Go on Passoword and click - Change Password
-        - Write your new password down, for future use
+        - Go to Administration.
+        - Then click on Users.
+        - Click on the Admin user.
+        - Go on Passoword and click - Change Password.
+        - Write your new password down, for future use.
 
 ---
 
@@ -157,11 +157,14 @@
 - Now reboot the machine and make sure that everything is running before we start setting up grafana.
 
 
----
+
+
 ---
 
 
-## Grafana Setup
+
+
+### Grafana Setup
 
 
 
@@ -174,7 +177,7 @@
  
  ---
  
- -  Copy the fallowing lines: 
+ -  Copy the fallowing lines.
 
         [grafana]  
         name=grafana  
@@ -188,28 +191,28 @@
 
 ---
 
- -  Paste on:
+ -  Paste on.
 
         /etc/yum.repos.d/grafana.repo
 
 ---
  
- -  Install grafana:
+ -  Install grafana.
     
         sudo yum install grafana
 
 ---
   
- -  Start grafana-server: 
+ -  Start grafana-server.
  
         sudo systemctl start grafana-server
         
 
 --- 
 
- -  Log into the web console:
+ -  Log into the web console.
     
-        http://your-server-ip:3000
+        http://your-zabbix-server-ip:3000
         
         -   User: admin
         -   Password : admin
