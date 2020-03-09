@@ -76,7 +76,7 @@
     
  -  Activate zabbix plugin:
  
-        http://your-server-ip:3000/plugins
+        http://your-zabbix-server-ip:3000/plugins
 
         - click on the zabbbix plugin.
         
@@ -88,13 +88,13 @@
  
  -  Import  dashboard:
    
-        http://your-server-ip:3000/dashboard/import
+        http://your-zabbix-server-ip:3000/dashboard/import
         
         - Click on the  [ Upload .json file ] button. 
         
         - select:
         
-                zafrana/basic-linux-monitor.json
+                zafrana/basic_linux_monitor.json
 
 --- 
 
