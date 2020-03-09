@@ -222,7 +222,7 @@
  
 ---
 
- -  Install all essential plugings by typing this on the terminal: 
+ -  Install all essential plugins. 
     
         sudo grafana-cli plugins install alexanderzobnin-zabbix-app
 
@@ -234,14 +234,14 @@
 ---
  
  
- -  Restart grafana-server:
+ -  Restart grafana-server.
   
         sudo systemctl restart grafana-server
         
 ---
     
     
- -  Activate zabbix plugin:
+ -  Activate zabbix plugin.
  
         http://your-zabbix-server-ip:3000/plugins
 
@@ -253,7 +253,7 @@
 ---
 
  
- -  Import  dashboard:
+ -  Import  dashboard.
    
         http://your-zabbix-server-ip:3000/dashboard/import
         
