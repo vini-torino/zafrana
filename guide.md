@@ -22,8 +22,6 @@ MANUAL CONFIGURATION
 
  - Update all your packages.
    
-       sudo yum check-update
- 
        sudo yum update
 
 
