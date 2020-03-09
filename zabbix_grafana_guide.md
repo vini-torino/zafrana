@@ -161,7 +161,7 @@
 - Now reboot the machine and make sure that everything is running before we start setting up grafana.
 
 
-***
+**
 
 
 ### Grafana Setup
