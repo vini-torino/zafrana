@@ -49,16 +49,14 @@
  - Open mysql shell.
  
        sudo mysql
-
----
  
- - Create zabbix database and user.
+     - Create zabbix database and user.
        
-       mysql > create database zabbix character set utf8 collate utf8_bin;
+            mysql > create database zabbix character set utf8 collate utf8_bin;
   
-       mysql > grant all privileges on zabbix.* to zabbix@localhost identified by 'password';
+            mysql > grant all privileges on zabbix.* to zabbix@localhost identified by 'password';
   
-       myql > quit; 
+            myql > quit; 
 
 ---
 
