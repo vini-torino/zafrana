@@ -260,6 +260,15 @@ MANUAL CONFIGURATION
         
 ---
 
+ - Import data source.
+     
+       http://your-zabbix-server-ip:3000/datasources/edit/1/?gettingstarted
+       
+      - api url.
+         
+               http://localhost/zabbix/api_jsonrpc.php
+ 
+---
  
  -  Import  dashboard.
    
