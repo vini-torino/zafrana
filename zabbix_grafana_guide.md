@@ -7,8 +7,10 @@ Recomendations
     DATABASE_VERSION: Ver 15.1 Distrib 10.3.17-MariaDB
 
 
-## Instalation guide
 
+---
+
+MANUAL CONFIGURATION 
 
 ### Zabbix Setup
 
