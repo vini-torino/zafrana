@@ -7,14 +7,10 @@ RECOMENTATIONS
     DATABASE_VERSION: Ver 15.1 Distrib 10.3.17-MariaDB
 
 
-
+MANUAL CONFIGURATION 
 ---
 
-MANUAL CONFIGURATION 
-
 ### Zabbix Setup
-
-
 
 - Make sure that selinux is disabled.
           
