@@ -86,5 +86,12 @@
 ---
 
  
- -  Import 
+ -  Import  dashboard:
+   
+        http://your-server-ip:3000/dashboard/import
+        
+        - Click on the  [ Upload .json file ] button. 
+        
+        - select:
+                zafrana/basic-linux-monitor.json
 
