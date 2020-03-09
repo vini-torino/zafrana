@@ -1,4 +1,4 @@
-RECOMENDATIONS
+RECOMMENDATIONS
      
     KERNEL: 4.18.0-147.5.1.el8_1.x86_64 or later.
     DISTRO: "Red Hat Enterprise Linux" or "CentOS".
